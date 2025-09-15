@@ -1,0 +1,38 @@
+body {
+    background: #fffbe6;
+    font-family: Arial, sans-serif;
+}
+#container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#recipe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff3e0;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    padding: 32px;
+    z-index: 1;
+    text-align: center;
+}
+#tomatoes {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.draggable {
+    position: absolute;
+    width: 100px;
+    cursor: grab;
+    user-select: none;
+}
